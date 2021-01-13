@@ -3,7 +3,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
     
-        gtag('config', 'UA-173937543-1');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo1.svg" alt="soomiles blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/soomiles"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-01-13T12:47:37.000Z" title="2021-01-13T12:47:37.000Z">2021-01-13</time><span class="level-item"><a class="link-muted" href="/categories/Set-Up/">Set-Up</a></span><span class="level-item">a minute read (About 134 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/01/13/%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-Failed-to-initialize-NVML-Driver-library-version-mismatch/">[에러 해결] Failed to initialize NVML: Driver/library version mismatch</a></h1><div class="content"><h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Failed to initialize NVML: Driver/library version mismatch</span><br></pre></td></tr></table></figure>
+        gtag('config', 'UA-173937543-1');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo1.svg" alt="soomiles blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/soomiles"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-01-13T12:47:37.000Z" title="2021-01-13T12:47:37.000Z">2021-01-13</time><span class="level-item"><a class="link-muted" href="/categories/Set-Up/">Set-Up</a></span><span class="level-item">a minute read (About 141 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/01/13/%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-Failed-to-initialize-NVML-Driver-library-version-mismatch/">[에러 해결] Failed to initialize NVML: Driver/library version mismatch</a></h1><div class="content"><h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Failed to initialize NVML: Driver/library version mismatch</span><br></pre></td></tr></table></figure>
 
 <h2 id="해결방법"><a href="#해결방법" class="headerlink" title="해결방법"></a>해결방법</h2><ol>
 <li>nvidia 관련 사용중인 드라이브 확인</li>
@@ -18,20 +18,19 @@
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo rmmod nvidia_uvm </span><br><span class="line">sudo rmmod nvidia_drm</span><br><span class="line">sudo rmmod nvidia_modeset </span><br><span class="line">sudo rmmod nvidia</span><br></pre></td></tr></table></figure>
 
-<p>rmmod: ERROR: Module nvidia_drm is in use</p>
-<ol>
+<p><em>기타 에러 해결법</em><br>rmmod: ERROR: Module nvidia_drm is in use</p>
+<ul>
 <li>systemctl isolate multi-user.target</li>
 <li>sudo modprobe -r nvidia-drm</li>
 <li>systemctl start graphical.target</li>
-</ol>
+</ul>
 <p>rmmod: ERROR: Module nvidia is in use</p>
-<ol>
-<li><p>nvidia 사용중인 프로세스 확인<br>sudo lsof /dev/nvidia*</p>
-</li>
-<li><p>해당 process 종료하기<br>sudo kill -9 PID</p>
-</li>
-<li><p>nvidia-smi 로 확인해보면 정상적으로 작동</p>
-</li>
+<ul>
+<li>nvidia 사용중인 프로세스 확인<br>sudo lsof /dev/nvidia*</li>
+<li>해당 process 종료하기<br>sudo kill -9 PID</li>
+</ul>
+<ol start="3">
+<li>nvidia-smi 로 확인해보면 정상적으로 작동</li>
 </ol>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-28T12:18:11.000Z" title="2020-07-28T12:18:11.000Z">2020-07-28</time><span class="level-item"><a class="link-muted" href="/categories/Set-Up/">Set-Up</a></span><span class="level-item">a minute read (About 135 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/07/28/Docker-Remote-Interpreter-Setting-In-PyCharm/">Docker Remote Interpreter Setting In PyCharm</a></h1><div class="content"><h1 id="Docker-Remote-Interpreter-Setting"><a href="#Docker-Remote-Interpreter-Setting" class="headerlink" title="Docker Remote Interpreter Setting"></a>Docker Remote Interpreter Setting</h1><p>Working at home, we want to connect the server’s interpreter. This is how to do that.</p>
 <h2 id="Open-Docker-TCP-Socket-Server"><a href="#Open-Docker-TCP-Socket-Server" class="headerlink" title="Open Docker TCP Socket (Server)"></a>Open Docker TCP Socket (Server)</h2><ol>
