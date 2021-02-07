@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: Summary - soomiles blog</title><meta property="og:type" content="blog"><meta property="og:title" content="soomiles blog"><meta property="og:url" content="http://soomiles.github.io/"><meta property="og:site_name" content="soomiles blog"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://soomiles.github.io/img/og_image.png"><meta property="article:author" content="Hyeonsoo Lee"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://soomiles.github.io"},"headline":"soomiles blog","image":["http://soomiles.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Hyeonsoo Lee"},"description":""}</script><link rel="icon" href="/img/favicon1.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-173937543-1" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-173937543-1');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo1.svg" alt="soomiles blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/soomiles"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">Summary</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-02-07T05:27:00.000Z" title="2021-02-07T05:27:00.000Z">2021-02-07</time><span class="level-item"><a class="link-muted" href="/categories/Competition/">Competition</a></span><span class="level-item">13 minutes read (About 2004 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/02/07/Solution-Summary-Prostate-cANcer-graDe-Assessment-PANDA-Challenge/">[Solution Summary] Prostate cANcer graDe Assessment (PANDA) Challenge </a></h1><div class="content"><h2 id="대회-소개-참조"><a href="#대회-소개-참조" class="headerlink" title="대회 소개 (참조)"></a>대회 소개 <em><a href="https://www.kaggle.com/rohitsingh9990/panda-eda-better-visualization-simple-baseline">(참조)</a></em></h2><h3 id="전립선암이란"><a href="#전립선암이란" class="headerlink" title="전립선암이란?"></a>전립선암이란?</h3><p>: 남성에게 가장 흔한 암 종류 중 하나입니다. 보통 전립선암은 천천히 자라고 전립선 안에만 있어 큰 위험요소는 아니지만 특정 종류의 전립선 암은 매우 빠르게 자라고 퍼집니다.</p>
+<ul>
+<li>전립선 암 검사</li>
+</ul>
+<ol>
+<li>Digital rectal exam (DRE): 의사가 장갑을 끼고 직장에 손을 넣어 전립선의 질감, 모양, 크기를 통해 이상을 탐지합니다.</li>
+<li>Prostate-specific antigen (PSA) test: 정맥의 혈액검사를 통해 PSA라는 전립선에서 분비되는 물질 검사를 합니다. 보통 적은 양이 분비되지만 이보다 많다면 전립선 감염, 염증 혹은 암이 의심됩니다.</li>
+<li>Ultrasound: 직장에 작은 크기의 도구를 넣어 음파를 통해 전립선 사진을 촬영합니다.</li>
+<li>Collecting a sample of prostate tissue: 모든 검사에서 암이 의심된다면 생체(조직) 검사를 통해 암을 판별합니다. 작은 침을 전립선에 넣어 조직을 수집하고 분석합니다.</li>
+</ol>
+<ul>
+<li><dl><dt>GLEASON score</dt><dd>생체 검사를 통해 암이라고 확정받으면 암의 aggrerssive level을 판단합니다. 병리학자는 암 세포가 정상 세포에 비해 얼마나 다른지를 보고 판단하고 점수가 높을 수록 심각한 암입니다.<br>Gleason score는 일반적으로 사용되는 전립선 암 점수입니다. 두 점수를 합산하여 범위는 2부터 10입니다. 2보다 낮은 점수는 보통 사용되지않습니다.</dd></dl></li>
+<li><dl><dt>ISUP grade</dt><dd>GLEASON score를 합산하여 ISUP grade를 나타냅니다. 범위는 1~5입니다.</dd></dl><ul>
+<li>Gleason score 6 = ISUP grade 1</li>
+<li>Gleason score 7 (3 + 4) = ISUP grade 2</li>
+<li>Gleason score 7 (4 + 3) = ISUP grade 3</li>
+<li>Gleason score 8 = ISUP grade 4</li>
+<li>Gleason score 9-10 = ISUP grade 5</li>
+</ul>
+</li>
+<li><dl><dt>Gleason score 채점방식</dt><dd>전립선 조직은 haematoxylin &amp; eosin(H&amp;E) 염색을 통해 염색됩니다. 조직은 내외분비샘 조직(glandular tissue)과 결합 조직(connective tissue)으로 구성됩니다.<br>분비샘 조직은 하얗거나 가지친 구멍처럼 보이는 구조로 되어있습니다. 분비샘의 모습은 GLEASON score 채점의 기반이 됩니다. 건강한 분비샘 구조는 암이 심각해질 수록 모양을 잃게 되며 점수는 3, 4, 5로 증가합니다.</dd></dl><blockquote>
+<p>한글 의료 용어는 정확하지 않을 수 있습니다. 수정 사항이 있다면 알려주세요.</p>
+</blockquote>
+<p>  [A]Benign prostate glands with folded epithelium(상피 접힌 전립선): 세포질은 창백하고 핵은 작고 규칙적입니다. 분비샘들은 함께 뭉쳐있습니다.</p>
+<p>  [B]Prostatic adenocarcinoma(정위선암종): Gleason Pattern 3은 분비샘 모습의 손실이 없습니다. 작은 분비샘이 양성 분비샘 사이에 침투합니다. 세포질은 종종 어둡고 핵은 어두운 색소와 몇몇 두드러진 뉴클레오로 확대됩니다. 각 상피부에는 별도의 lumen이 있습니다.</p>
+<p>  [C]Prostatic adenocarcinoma(정성 선종암): Gleason Pattern 4는 분비샘 모습 손실을 가지고 있습니다. Luminar를 형성하려는 시도가 있었지만 종양이 완전하고 잘 발달된 분비샘을 형성하는데 실패했습니다. 이 현미경 영상은 불규칙적인 암, 즉 다발성 luminar를 가진 상피부를 보여줍니다. 또한 잘 형성되지 않은 작은 분비샘과 퓨전된 분비샘도 있습니다. 이 모든 것이 Gleason Pattern 4에 포함되어 있습니다.</p>
+<p>  [D]Prostatic adenocarcinoma(전립선 선암종): Gleason Pattern 5는 거의 완전한 분비샘 모습 손실을 가지고 있습니다. 분산되어 있는 단일 암세포가 stroma에서 발견됩니다. Gleason Pattern 5는 또한 암세포의 고체 시트나 가닥을 포함할 수 있습니다. 모든 현미경 사진에는 20배 렌즈 확대 시 hematoxylin &amp; eosin stains이 표시됩니다.</p>
+  <img src="/2021/02/07/Solution-Summary-Prostate-cANcer-graDe-Assessment-PANDA-Challenge/Untitled.png" class="" title="No title">
+
+</li>
+</ul>
+<h3 id="데이터"><a href="#데이터" class="headerlink" title="데이터"></a>데이터</h3><ul>
+<li><p>11,000 전립선 생체(조직)검사 whole-slide images (WSI)</p>
+</li>
+<li><p>각 WSI의 ISUP grade, GLEASON score</p>
+</li>
+<li><p>제공: Radboud University Medical Center, Karolinska Institute<br>c</p>
+</li>
+<li><p>Sample Images</p>
+<ol>
+<li>이미지 크기는 x축과 y축 모두 5,000~40,000 px 사이로 큽니다.</li>
+<li>이미지는 레벨 3까지 존재합니다 (1배, 4배, 16배 축소)</li>
+<li>조직은 서로 다르게 회전되어있고 이에 큰 의미는 없습니다.</li>
+<li>병리조직들의 색 차이는 매우 크고 이는 연구 절차 차이때문입니다. </li>
+</ol>
+</li>
+</ul>
+<img src="/2021/02/07/Solution-Summary-Prostate-cANcer-graDe-Assessment-PANDA-Challenge/Untitled%202.png" class="" title="No title">
+
+<ul>
+<li><dl><dt>Label masks</dt><dd>pixel-label mask 정보가 주어져있고 각 기관마다 다르게 표시하였습니다.</dd></dl><ul>
+<li><p><strong>Radboudumc</strong>: Prostate glands are individually labelled. Valid values are:</p>
+<ul>
+<li>0: background (non tissue) or unknown</li>
+<li>1: stroma (connective tissue, non-epithelium tissue)</li>
+<li>2: healthy (benign) epithelium”</li>
+<li>3: cancerous epithelium (Gleason 3)</li>
+<li>4: cancerous epithelium (Gleason 4)</li>
+<li>5: cancerous epithelium (Gleason 5)</li>
+</ul>
+</li>
+<li><p><strong>Karolinska</strong>: Regions are labelled. Valid values:</p>
+<ul>
+<li>0: background (non tissue) or unknown</li>
+<li>1: benign tissue (stroma and epithelium combined)</li>
+<li>2: cancerous tissue (stroma and epithelium combined)</li>
+</ul>
+<p>반자동적으로 생성되었기때문에 noisy합니다.</p>
+<img src="/2021/02/07/Solution-Summary-Prostate-cANcer-graDe-Assessment-PANDA-Challenge/Untitled%203.png" class="" title="No title">
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="상위-Solutions"><a href="#상위-Solutions" class="headerlink" title="상위 Solutions"></a>상위 Solutions</h2><ul>
+<li><p><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/169143">1st Place Solution</a></p>
+<ul>
+<li><p>Data Preprocessing</p>
+<ul>
+<li>Geting cleaned labels</li>
+</ul>
+<ol>
+<li><p>efficientnet-b1을 k-fold로 학습시킨 후, validation set에 대해 예측값을 낸다.</p>
+</li>
+<li><p>ground truth와 isup grade의 차이가 클 경우 해당 데이터를 삭제한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def remove_noisy(df, thresh):</span><br><span class="line">    gap = np.abs(df[<span class="string">"isup_grade"</span>] - df[<span class="string">"probs_raw"</span>])</span><br><span class="line">    df_removed = df[gap &gt; thresh].reset_index(drop=True)</span><br><span class="line">    df_keep = df[gap &lt;= thresh].reset_index(drop=True)</span><br><span class="line">    <span class="built_in">return</span> df_keep, df_removed</span><br><span class="line"></span><br><span class="line">df_keep, df_remove = remove_noisy(df, thresh=1.6)</span><br><span class="line">show_keep_remove(df, df_keep, df_remove)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>Split: stratifed k-fold with <a href="https://www.kaggle.com/yukkyo/imagehash-to-detect-duplicate-images-and-grouping">imghash</a> or stratified k-fold with gleason-score and imghash similarity</li>
+<li>Tile Method: <a href="https://www.kaggle.com/iafoss/panda-concat-tile-pooling-starter-0-79-lb">iafoss tile method</a> (tile size 192, tile num 64)</li>
+</ul>
+</li>
+<li><p>Model</p>
+<ol>
+<li>Resnext50_32x4d: head(3 * reg_head + 1 * softmax head)</li>
+<li>Effnet-b1 + generalized-mean pooling</li>
+</ol>
+</li>
+<li><p>Training</p>
+<ol>
+<li>Local train &amp; pred</li>
+<li>Remove noisy label</li>
+<li>Re-train</li>
+</ol>
+</li>
+<li><p>Not worked</p>
+<ul>
+<li>Remove noisy by confident-learning</li>
+<li>Cycle GAN augmentation(karolinska radboud)</li>
+<li>test with AdaBN &amp; Freezing BN at train</li>
+<li>CutMix, Mixup (before denoising)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/169108">2nd Place Solution</a> (1/2)</p>
+<ol>
+<li><p>Image Preprocessing</p>
+<ul>
+<li>Remove white background &amp; save medium resolution</li>
+<li><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/151323">Remove pen marks</a> &gt; Reduce Gap (CV, LB)</li>
+<li>Image Augmentation<ul>
+<li>Full Slide: Shift, Scale, Rotation, Flip</li>
+<li>Patch: Rotation, VFlip</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Model</p>
+<ul>
+<li><p>ResNet34</p>
+</li>
+<li><p><a href="https://www.kaggle.com/iafoss/panda-concat-tile-pooling-starter-0-79-lb">Making Square Feature (iaofoss)</a></p>
+</li>
+<li><p>Square Feature 이후, Squeeze &amp; Excitation Block 추가</p>
+</li>
+<li><p>Pooling (Remove BatchNormalization)</p>
+</li>
+<li><p>Two Head (one for regression, one for classification)</p>
+<ul>
+<li><p>for regression, modified sigmoid is used to represent range(-1, 6)</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#idea taken from fastai</span><br><span class="line">def sigmoid_range(x, low, high):</span><br><span class="line">    <span class="keyword">return</span> torch.sigmoid(x) * (high - low) + low</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Training</p>
+<ul>
+<li>Stage 1: 49 tiles</li>
+<li>Stage 2: 81 tiles</li>
+<li>One cycle Scheduler</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/169303">2nd Place Solution</a> (2/2)</p>
+<ul>
+<li>Huge Image Size<ul>
+<li>iaofoss tile method</li>
+</ul>
+</li>
+<li>Label Noise<ul>
+<li>MSE loss on karolinska data</li>
+<li>Huber loss with delta 1 on radboud data (radbound is noiser) - lb0.9인데 radbound가 0.85인걸 보고 알아챔</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/169232">3rd Place Solution</a></p>
+<ul>
+<li>운</li>
+<li>different networks and my custom tile cropping, hard augmentations</li>
+</ul>
+</li>
+<li><p><a href="https://www.kaggle.com/iafoss/panda-concat-tile-pooling-starter-0-79-lb">iaofoss concat tile pooling method</a></p>
+  <img src="/2021/02/07/Solution-Summary-Prostate-cANcer-graDe-Assessment-PANDA-Challenge/Untitled%204.png" class="" title="No title">
+
+<ul>
+<li><p>기존의 방식은 whole slide를 resize를 한 후 예측하는 방식이지만, 이는 wholse slide의 비율에 따라 resize를 하였을 때, 이미지의 ratio도 달라지고  GPU도 빈공간이 많기때문에 효율적이지않음.</p>
+</li>
+<li><p>그래서 patch를 concatenate하여 encoder에 돌린 이후에 마지막 head에서 permute를 통해 prediction을 내는 방식.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Model</span><span class="params">(nn.Module)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, arch=<span class="string">'resnext50_32x4d_ssl'</span>, n=<span class="number">6</span>, pre=True)</span>:</span></span><br><span class="line">        super().__init__()</span><br><span class="line">        m = torch.hub.load(<span class="string">'facebookresearch/semi-supervised-ImageNet1K-models'</span>, arch)</span><br><span class="line">        self.enc = nn.Sequential(*list(m.children())[:<span class="number">-2</span>])       </span><br><span class="line">        nc = list(m.children())[<span class="number">-1</span>].in_features</span><br><span class="line">        self.head = nn.Sequential(AdaptiveConcatPool2d(),Flatten(),nn.Linear(<span class="number">2</span>*nc,<span class="number">512</span>),</span><br><span class="line">                            Mish(),nn.BatchNorm1d(<span class="number">512</span>), nn.Dropout(<span class="number">0.5</span>),nn.Linear(<span class="number">512</span>,n))</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span><span class="params">(self, *x)</span>:</span></span><br><span class="line">        shape = x[<span class="number">0</span>].shape</span><br><span class="line">        n = len(x)</span><br><span class="line">        x = torch.stack(x,<span class="number">1</span>).view(<span class="number">-1</span>,shape[<span class="number">1</span>],shape[<span class="number">2</span>],shape[<span class="number">3</span>])</span><br><span class="line">        <span class="comment">#x: bs*N x 3 x 128 x 128</span></span><br><span class="line">        x = self.enc(x)</span><br><span class="line">        <span class="comment">#x: bs*N x C x 4 x 4</span></span><br><span class="line">        shape = x.shape</span><br><span class="line">        <span class="comment">#concatenate the output for tiles into a single map</span></span><br><span class="line">        x = x.view(<span class="number">-1</span>,n,shape[<span class="number">1</span>],shape[<span class="number">2</span>],shape[<span class="number">3</span>]).permute(<span class="number">0</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>).contiguous()\</span><br><span class="line">          .view(<span class="number">-1</span>,shape[<span class="number">1</span>],shape[<span class="number">2</span>]*n,shape[<span class="number">3</span>])</span><br><span class="line">        <span class="comment">#x: bs x C x N*4 x 4</span></span><br><span class="line">        x = self.head(x)</span><br><span class="line">        <span class="comment">#x: bs x n</span></span><br><span class="line">        <span class="keyword">return</span> x</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="https://www.kaggle.com/rohitsingh9990/panda-eda-better-visualization-simple-baseline">PANDA - EDA + Better Visualization+Simple Baseline</a></li>
+<li><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/169143">1st Place Solution [PND]</a></li>
+<li><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/169108">2nd Place Solution [Save the Prostate]</a></li>
+<li><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/169303">Part of 2nd place solution (only kaggle/colab TPU were used)</a></li>
+<li><a href="https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/169232">3rd place solution</a></li>
+<li><a href="https://www.kaggle.com/iafoss/panda-concat-tile-pooling-starter-0-79-lb">PANDA concat tile pooling starter [0.79 LB]</a></li>
+</ul>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar1.png" alt="SooMiles"></figure><p class="title is-size-4 is-block line-height-inherit">SooMiles</p><p class="is-size-6 is-block">ML Researcher</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Seoul</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/soomiles" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/soomiles"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Competition/"><span class="level-start"><span class="level-item">Competition</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/GCP/"><span class="level-start"><span class="level-item">GCP</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Set-Up/"><span class="level-start"><span class="level-item">Set-Up</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/TPU/"><span class="level-start"><span class="level-item">TPU</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2021-02-07T05:27:00.000Z">2021-02-07</time></p><p class="title is-6"><a class="link-muted" href="/2021/02/07/Solution-Summary-Prostate-cANcer-graDe-Assessment-PANDA-Challenge/">[Solution Summary] Prostate cANcer graDe Assessment (PANDA) Challenge </a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Competition/">Competition</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2021-01-13T12:47:37.000Z">2021-01-13</time></p><p class="title is-6"><a class="link-muted" href="/2021/01/13/%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-Failed-to-initialize-NVML-Driver-library-version-mismatch/">[에러 해결] Failed to initialize NVML: Driver/library version mismatch</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Set-Up/">Set-Up</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-28T12:18:11.000Z">2020-07-28</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/28/Docker-Remote-Interpreter-Setting-In-PyCharm/">Docker Remote Interpreter Setting In PyCharm</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Set-Up/">Set-Up</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-20T08:02:46.000Z">2020-07-20</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/20/Ubuntu%EC%97%90%EC%84%9C-Chrome-Remote-Desktop-%EC%84%A4%EC%A0%95/">Ubuntu에서 Chrome Remote Desktop 설정</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Set-Up/">Set-Up</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-07-17T02:30:37.000Z">2020-07-17</time></p><p class="title is-6"><a class="link-muted" href="/2020/07/17/GCP-VM-Instance-%EB%A7%8C%EB%93%A4%EA%B8%B0/">GCP VM Instance 만들기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/GCP/">GCP</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2021/02/"><span class="level-start"><span class="level-item">February 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/01/"><span class="level-start"><span class="level-item">January 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/07/"><span class="level-start"><span class="level-item">July 2020</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Summary/"><span class="tag">Summary</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Tutorial/"><span class="tag">Tutorial</span><span class="tag is-grey-lightest">10</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe to Updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo1.svg" alt="soomiles blog" height="28"></a><p class="size-small"><span>&copy; 2021 Hyeonsoo Lee</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/soomiles"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'http://soomiles.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to Top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
